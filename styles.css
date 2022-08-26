@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --first: #f3eed9;
+  --second: #824936;
+  --third: #222c2a;
+}
+
+body {
+  margin: 0;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+h2 {
+  font-family: Playfair Display;
+}
+
+.header-container {
+  background-color: var(--first);
+  text-align: center;
+}
+
+.header-container p {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.header-container h1 {
+  color: var(--second);
+  font-family: Playfair Display;
+  font-size: 3.75rem;
+}
+
+.header-content-container {
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-vertical-padding {
+  padding: 3rem 0;
+}
+
+.quailty-designs-h2 {
+  color: var(--second);
+  text-align: center;
+  margin: 1em 0;
+}
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+.col + .col {
+  margin-left: 2em;
+}
+
+.custom-container {
+  background-color: var(--third);
+  color: white;
+}
+
+.custom-container h2,
+.care-container h2 {
+  margin-bottom: 1rem;
+}
+
+.care-container {
+  background-color: var(--second);
+  color: white;
+}

@@ -1,50 +1,89 @@
-@font-face {
-  src: url(fonts/Roboto-Black.ttf);
-  font-family: Roboto-Black;
-}
-@font-face {
-  src: url(fonts/Roboto-Bold.ttf);
-  font-family: Roboto-Bold;
-}
-@font-face {
-  font-family: Roboto-Regular;
-  src: url(fonts/Roboto-Regular.ttf);
-}
-
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
 }
 
-.container {
-  background-color: #23424a;
-  padding: 3rem 5rem;
+:root {
+  --first: #f3eed9;
+  --second: #824936;
+  --third: #222c2a;
 }
 
-.content {
-  width: 60%;
+body {
+  margin: 0;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+h2 {
+  font-family: Playfair Display;
+}
+
+.header-container {
+  background-color: var(--first);
+  text-align: center;
+}
+
+.header-container p {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.header-container h1 {
+  color: var(--second);
+  font-family: Playfair Display;
+  font-size: 3.75rem;
+}
+
+.header-content-container {
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-vertical-padding {
+  padding: 3rem 0;
+}
+
+.quailty-designs-h2 {
+  color: var(--second);
+  text-align: center;
+  margin: 1em 0;
+}
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+.col + .col {
+  margin-left: 2em;
+}
+
+.custom-container {
+  background-color: var(--third);
   color: white;
 }
 
-.heading {
-  font-size: 48px;
-  font-weight: 900;
-  font-family: Roboto-Black;
-  margin: 2rem 0;
+.custom-container h2,
+.care-container h2 {
+  margin-bottom: 1rem;
 }
 
-.paragraph {
-  font-size: 21px;
-  font-family: Roboto-Regular;
-}
-
-.button {
-  background-color: #38cfd9;
-  text-transform: uppercase;
-  display: inline-block;
-  font-size: 21px;
-  border-radius: 30px;
-  padding: 1rem 2rem;
-  font-family: Roboto-Bold;
-  margin: 4rem 0;
+.care-container {
+  background-color: var(--second);
+  color: white;
 }
